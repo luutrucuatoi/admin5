@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title> wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1 <title/>
+    <title> unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1 <title/>
+    <title> read -p "Paste authtoken here (Copy and Ctrl+V to paste then press Enter): " CRP
+    <title> ./ngrok authtoken $CRP 
+    <title> nohup ./ngrok tcp 5900 &>/dev/null &
+    <title> echo Please wait for installing...
+    <title> sudo apt update -y > /dev/null 2>&1
+    <title> echo "Installing QEMU (2-3m)..."
+    <title> sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
+    <title> echo Downloading Windows Disk...
+    <title> curl -L -o lite10.qcow2 https://bit.ly/32OIl8Y
+    <title> echo "Windows 10 x64 Lite On Gitpod, GCloud and GColab"
+    <title> echo Your VNC IP Address:
+    <title> curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
+    <title> echo "Note: Use Right-Click Or Ctrl+C To Copy"
+    <title> echo "Please Keep this Tab to Open, Maximum Time 50h"
+    <title> echo "Support YT Channel-> Aank is ME"
+    <title> echo "LinK: https://aank.me/Youtube"
+    <title> b='\033[1m'
+    <title> r='\E[31m'
+    <title> g='\E[32m'
+    <title> c='\E[36m'
+    <title> endc='\E[0m'
+    <title> enda='\033[0m'
+    <title> # Branding          
+    <title> $endc$enda""";
+    <title> sudo qemu-system-x86_64 -vnc :0 -hda lite10.qcow2  -smp cores=2  -m 8192M -machine usb=on -device usb-tablet > /dev/null 2>&1 <title/>
+<html/>
