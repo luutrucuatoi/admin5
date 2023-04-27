@@ -17,4 +17,4 @@ echo "Đợi 1-2 Phút để hoàn thành thiết lập"
 echo "Không đóng tab này"
 echo "hãy ủng hộ Hoàng vtmc xin cảm ơn"
 qemu-system-x86_64 -hda w10x64.img -m 8G -smp cores=4 -net user,hostfwd=tcp::3388-:3389 -net nic -object rng-random,id=rng0,filename=/dev/urandom -device virtio-rng-pci,rng=rng0 -vga vmware -nographic -vnc :0
-sleep 43200
+
