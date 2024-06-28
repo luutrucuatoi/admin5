@@ -9,7 +9,7 @@ curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 	&& sudo apt install ngrok
 read -p "Ctrl + V Authtoken(nhập token ngrok): " CRP 
 ngrok authtoken $CRP 
-nohup ngrok tcp 3388 &>/dev/null &
+nohup ngrok tcp --region=ap 3389 &>/dev/null &
 echo Tải xuống tệp từ sever
 apt-get install qemu-kvm
 echo "Đợi"
