@@ -1,11 +1,10 @@
 echo "Tải xuống các tệp windows"
 wget -O w10x64.img https://bit.ly/akuhnetW10x64
 echo "Tải ngrok"
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
-unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
+sudo tar -xvzf ~/Downloads/https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz -C /usr/local/bin
 read -p "Ctrl + V Authtoken(nhập token ngrok): " CRP 
-./ngrok authtoken $CRP 
-nohup ./ngrok tcp 3388 &>/dev/null &
+ngrok authtoken $CRP 
+nohup ngrok tcp 3388 &>/dev/null &
 echo Tải xuống tệp từ sever
 apt-get install qemu-kvm
 echo "Đợi"
