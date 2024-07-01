@@ -1,5 +1,6 @@
 echo "Tải xuống các tệp windows"
 wget -O w10x64.img https://bit.ly/akuhnetW10x64
+apt-get install dialog whiptail -y
 echo "Tải ngrok"
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
 	| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
